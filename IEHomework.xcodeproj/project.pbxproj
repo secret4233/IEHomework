@@ -386,9 +386,9 @@
 		2B4E22C82503D5FA00968FE3 = {
 			isa = PBXGroup;
 			children = (
+				2B4E22D22503D5FA00968FE3 /* Products */,
 				2B4E22DB2503D63200968FE3 /* opencvLib */,
 				2B4E22D32503D5FA00968FE3 /* IEHomework */,
-				2B4E22D22503D5FA00968FE3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
