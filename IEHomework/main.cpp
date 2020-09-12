@@ -11,13 +11,13 @@ void getBackground(Mat Image,Mat Mask){
         Vec3b *mask = Mask.ptr<Vec3b>(r);
         for (int c = 0; c < colLen; c++){//YCrCb
             double Cb = -0.169*data[c][2] - 0.331*data[c][1] + 0.500*data[c][0]; //蓝色检测
-            //double Y  =  0.299*data[c][2] + 0.587*data[c][1] + 0.114*data[c][0]; //亮度检测
-            //printf("%f ",Y);
+            double Y  =  0.299*data[c][2] + 0.587*data[c][1] + 0.114*data[c][0]; //亮度检测
+            printf("%d %d %d ",data[c][2],data[c][1], data[c][0]);
+            printf("%f\n",Y);
             if (Cb > 5){
                 mask[c][0] = mask[c][1] = mask[c][2] = 0;
             }
         }
-        //printf("\n");
     }
 }
 
